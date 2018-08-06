@@ -91,9 +91,9 @@ export default class DateComponent extends PureComponent {
                     {...styleNameFactory('link')}
                 >
                     <select onChange={this.setActiveComponent} >
-                        <option value={DayOfWeek.className}>day of week</option>
-                        <option value={DayOfMonth.className}>day of month</option>
-                        <option value={Month.className}>month</option>
+                        <option value={DayOfWeek.className}>每周</option>
+                        <option value={DayOfMonth.className}>每月</option>
+                        <option value={Month.className}>月份</option>
                     </select>
                 </div>
             </div>
