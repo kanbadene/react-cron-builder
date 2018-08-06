@@ -3,9 +3,9 @@
 import {PureComponent} from 'react'
 
 const weekDaysOptions = [
-    'Mondays', 'Tuesdays', 'Wednesdays',
-    'Thursdays', 'Fridays', 'Saturdays',
-    'Sundays'
+    '星期一', '星期二', '星期三',
+    '星期四', '星期五', '星期六',
+    '星期日'
 ].map((day: string, i: number) => ({
     label: day,
     value: String(i + 1)
@@ -13,15 +13,15 @@ const weekDaysOptions = [
 
 const options = [
     {
-        label: 'every day',
+        label: '每天',
         value: '*'
     },
     {
-        label: 'Mondays to Fridays',
+        label: '星期一到星期五',
         value: '1-5'
     },
     {
-        label: 'Saturdays and Sundays',
+        label: '星期六到星期日',
         value: '6-7'
     }
 ].concat(weekDaysOptions);
