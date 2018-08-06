@@ -86,29 +86,6 @@ export default class CronBuilder extends PureComponent {
         return (
             <div {...styleNameFactory()} >
                 <fieldset {...styleNameFactory('fieldset')} >
-//                     <legend {...styleNameFactory('legend')} >
-//                         <Tab
-//                             isActive={activeIndex === 0}
-//                             styleNameFactory={styleNameFactory}
-//                             onClick={this.selectTab(0)}
-//                         >
-//                             Periodically
-//                         </Tab>
-//                         <Tab
-//                             isActive={activeIndex === 1}
-//                             styleNameFactory={styleNameFactory}
-//                             onClick={this.selectTab(1)}
-//                         >
-//                             Periodically within a time frame
-//                         </Tab>
-//                         <Tab
-//                             isActive={activeIndex === 2}
-//                             styleNameFactory={styleNameFactory}
-//                             onClick={this.selectTab(2)}
-//                         >
-//                             At a recurring fixed time
-//                         </Tab>
-//                     </legend>
                     <Component
                         styleNameFactory={styleNameFactory}
                         ref={(component: any) => this.presetComponent = component}
