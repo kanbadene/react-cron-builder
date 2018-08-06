@@ -3,9 +3,9 @@
 import {PureComponent} from 'react'
 
 const monthOptions = [
-    'January', 'February', 'March', 'April',
-    'May', 'June', 'July', 'August', 'September',
-    'November', 'December'
+    '一月', '二月', '三月', '四月',
+    '五月', '六月', '七月', '八月', '九月','十月',
+    '十一月', '十二月'
 ].map((month: string, i: number) => ({
     label: month,
     value: String(i + 1)
@@ -13,7 +13,7 @@ const monthOptions = [
 
 const options = [
     {
-        label: 'every month',
+        label: '月份',
         value: '*'
     }
 ].concat(monthOptions);
