@@ -6,7 +6,7 @@ import range from 'lodash/range'
 
 const options = [
     {
-        label: 'every month day',
+        label: '每月',
         value: '*'
     }
 ].concat(toOptions(range(1, 32)));
