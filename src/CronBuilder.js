@@ -122,7 +122,7 @@ export default class CronBuilder extends PureComponent {
                         onClick={this.generateExpression}
                         data-action
                     >
-                        Generate cron expression
+                        生成cron表达式
                     </button>
                 </div>
                 <If condition={!!generatedExpression && showResult}>
