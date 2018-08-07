@@ -57,7 +57,6 @@ export default class FixedTimeTab extends PresetTab {
                     </div>
                 </div>
                 <div
-                    style={{marginLeft: 35}}
                 >
                     <DateComponent
                         styleNameFactory={styleNameFactory}
