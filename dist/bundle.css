@@ -475,7 +475,6 @@
 }
 .cron-builder__row--hours-range {
   width: 300px;
-  justify-content: center;
 }
 .cron-builder__row--inline {
   display: inline-flex;
