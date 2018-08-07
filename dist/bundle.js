@@ -1712,12 +1712,11 @@ var CronBuilder = (_temp = _class = function (_PureComponent) {
     function CronBuilder(props, ctx) {
         _classCallCheck(this, CronBuilder);
 
-        // const activeIndex = getActiveTabIndex(props);
         var _this = _possibleConstructorReturn(this, (CronBuilder.__proto__ || Object.getPrototypeOf(CronBuilder)).call(this, props, ctx));
 
         _initialiseProps.call(_this);
 
-        var activeIndex = 1;
+        var activeIndex = getActiveTabIndex(props);
         _this.state = {
             activeIndex: activeIndex,
             Component: components[activeIndex],
@@ -1745,6 +1744,37 @@ var CronBuilder = (_temp = _class = function (_PureComponent) {
                 _react2.default.createElement(
                     'fieldset',
                     styleNameFactory('fieldset'),
+                    _react2.default.createElement(
+                        'legend',
+                        styleNameFactory('legend'),
+                        _react2.default.createElement(
+                            _Tab2.default,
+                            {
+                                isActive: activeIndex === 0,
+                                styleNameFactory: styleNameFactory,
+                                onClick: this.selectTab(0)
+                            },
+                            '\u5468\u671F'
+                        ),
+                        _react2.default.createElement(
+                            _Tab2.default,
+                            {
+                                isActive: activeIndex === 1,
+                                styleNameFactory: styleNameFactory,
+                                onClick: this.selectTab(1)
+                            },
+                            '\u65F6\u95F4\u5185\u5468\u671F'
+                        ),
+                        _react2.default.createElement(
+                            _Tab2.default,
+                            {
+                                isActive: activeIndex === 2,
+                                styleNameFactory: styleNameFactory,
+                                onClick: this.selectTab(2)
+                            },
+                            '\u56FA\u5B9A\u65F6\u95F4'
+                        )
+                    ),
                     _react2.default.createElement(Component, {
                         styleNameFactory: styleNameFactory,
                         ref: function ref(component) {
@@ -9138,12 +9168,12 @@ var minutesOptions = (0, _utils.toOptions)((0, _range2.default)(1, 60)).map(func
 
     if (label === '1') {
         return {
-            label: label + ' min',
+            label: label + ' \u5206',
             value: value
         };
     } else {
         return {
-            label: label + ' mins',
+            label: label + ' \u5206',
             value: value
         };
     }
