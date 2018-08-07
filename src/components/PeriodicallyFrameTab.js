@@ -14,12 +14,12 @@ const minutesOptions = toOptions(range(1, 60)).map((option: Option) => {
     const {label, value} = option;
     if(label === '1') {
         return {
-            label: `${label} min`,
+            label: `${label} 分`,
             value
         }
     } else {
         return {
-            label: `${label} mins`,
+            label: `${label} 分`,
             value
         }
     }
