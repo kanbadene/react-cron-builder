@@ -47,8 +47,7 @@ export default class CronBuilder extends PureComponent {
 
     constructor(props: Props, ctx: Object) {
         super(props, ctx);
-        // const activeIndex = getActiveTabIndex(props);
-        const activeIndex = 1;
+        const activeIndex = getActiveTabIndex(props);
         this.state = {
             activeIndex,
             Component: components[activeIndex],
@@ -86,6 +85,29 @@ export default class CronBuilder extends PureComponent {
         return (
             <div {...styleNameFactory()} >
                 <fieldset {...styleNameFactory('fieldset')} >
+                    <legend {...styleNameFactory('legend')} >
+                        <Tab
+                            isActive={activeIndex === 0}
+                            styleNameFactory={styleNameFactory}
+                            onClick={this.selectTab(0)}
+                        >
+                            周期
+                        </Tab>
+                        <Tab
+                            isActive={activeIndex === 1}
+                            styleNameFactory={styleNameFactory}
+                            onClick={this.selectTab(1)}
+                        >
+                            时间内周期
+                        </Tab>
+                        <Tab
+                            isActive={activeIndex === 2}
+                            styleNameFactory={styleNameFactory}
+                            onClick={this.selectTab(2)}
+                        >
+                            固定时间
+                        </Tab>
+                    </legend>
                     <Component
                         styleNameFactory={styleNameFactory}
                         ref={(component: any) => this.presetComponent = component}
