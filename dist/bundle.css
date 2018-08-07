@@ -459,7 +459,6 @@
 }
 .cron-builder__preset {
   min-height: 100px;
-  display: flex;
   align-items: flex-end;
   margin-bottom: 40px;
   margin-top: 20px;
@@ -491,7 +490,6 @@
 }
 .cron-builder__link {
   cursor: pointer;
-  right: 0;
   margin-top: 3px;
   margin-right: 5px;
 }
