@@ -85,7 +85,7 @@ export default class CronBuilder extends PureComponent {
         return (
             <div {...styleNameFactory()} >
                 <fieldset {...styleNameFactory('fieldset')} >
-                    <legend {...styleNameFactory('legend')} >
+                    <legend {...styleNameFactory('legend')} style={{ fontSize: '1rem' }}>
                         <Tab
                             isActive={activeIndex === 0}
                             styleNameFactory={styleNameFactory}
