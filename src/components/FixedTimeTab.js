@@ -45,6 +45,7 @@ export default class FixedTimeTab extends PresetTab {
                             onChange={this.selectHours}
                             styleNameFactory={styleNameFactory}
                             value={hours}
+                            style={{ width: 12 }}
                         />
                     </div>
                     <div>
@@ -53,11 +54,11 @@ export default class FixedTimeTab extends PresetTab {
                             onChange={this.selectMinutes}
                             styleNameFactory={styleNameFactory}
                             value={minutes}
+                            style={{ width: 12 }}
                         />
                     </div>
                 </div>
-                <div
-                >
+                <div>
                     <DateComponent
                         styleNameFactory={styleNameFactory}
                     >
