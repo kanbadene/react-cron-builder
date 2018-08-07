@@ -1746,7 +1746,7 @@ var CronBuilder = (_temp = _class = function (_PureComponent) {
                     styleNameFactory('fieldset'),
                     _react2.default.createElement(
                         'legend',
-                        styleNameFactory('legend'),
+                        _extends({}, styleNameFactory('legend'), { style: { fontSize: '1rem' } }),
                         _react2.default.createElement(
                             _Tab2.default,
                             {
@@ -9464,7 +9464,8 @@ var FixedTimeTab = function (_PresetTab) {
                             options: hoursOptions,
                             onChange: this.selectHours,
                             styleNameFactory: styleNameFactory,
-                            value: hours
+                            value: hours,
+                            style: { width: 12 }
                         })
                     ),
                     _react2.default.createElement(
@@ -9474,15 +9475,14 @@ var FixedTimeTab = function (_PresetTab) {
                             options: minutesOptions,
                             onChange: this.selectMinutes,
                             styleNameFactory: styleNameFactory,
-                            value: minutes
+                            value: minutes,
+                            style: { width: 12 }
                         })
                     )
                 ),
                 _react2.default.createElement(
                     'div',
-                    {
-                        style: { marginLeft: 35 }
-                    },
+                    null,
                     _react2.default.createElement(
                         _DateComponent2.default,
                         {
